@@ -23,6 +23,10 @@ Three independent tasks:
 - Binary classification of radio signals (pulsar candidates)  
 - Imbalanced: 72% class 0 / 28% class 1
 
+**Preprocessing**
+- Feature scaling with `StandardScaler`
+- Stratified train/test split (80/20)
+
 **Model**
 - Loss: Binary cross-entropy  
 - Hidden activation: ReLU  
@@ -71,3 +75,12 @@ Best found: `neurons=64`, `dropout=0.0`, `lr=0.1`
 - Confusion matrices
 - Examples of correctly and incorrectly classified images
 
+
+## Tech Stack
+
+- **Python**
+- **TensorFlow / Keras** – model building and training
+- **Keras Tuner** – hyperparameter search (Task 1)
+- **scikit-learn** – train/test split, preprocessing (StandardScaler), evaluation metrics
+- **pandas / NumPy** – data loading and manipulation
+- **Matplotlib** – visualizations (class distribution, training curves, confusion matrices)
